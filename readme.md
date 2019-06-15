@@ -6,3 +6,5 @@
 
 
 It is a simple Rock Paper Scissor game made using JavaScript. 
+
+Live Demo:- https://awesomerockpaperscissor.herokuapp.com/
