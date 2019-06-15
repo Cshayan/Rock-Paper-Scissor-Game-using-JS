@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+i,
+h2 {
+    color: #f9ca24;
+}
+
+
+.btn-success {
+    padding: 10px 50px;
+    border-radius: 0%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.btn:active{
+    transform: scale(0.7);
+}
+
+.rock, .paper, .scissor{
+    padding: 10px 50px;
+    border-radius: 0%;
+    background: #8e44ad;
+    border: 1px solid #8e44ad;
+    color: #fff;
+    outline: none;
+    transition: transform 0.6s ease-in-out;
+    text-transform: capitalize;
+}
+
+.rock:active, .paper:active, .scissor:active{
+    transform: scale(0.4);
+}
+
+.intro {
+    transition: opacity 0.6s ease-in;
+}
+
+.match {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 0.6s ease-in 0.6s;
+}
+
+.hands,
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-hand {
+    transform: rotateY(180deg);
+}
+
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes shakePlayerHand{
+    0%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    15%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    30%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    45%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    60%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    75%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    90%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    100%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+}
+@keyframes shakeComputerHand{
+    0%{
+        transform: translateY(0px);
+    }
+    15%{
+        transform: translateY(-50px);
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    45%{
+        transform: translateY(-50px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    90%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
+
+// Media Queries
+@media screen and (max-width: 568px) {
+    .options {
+        justify-content: center;
+    }
+
+    .rock, .paper, .scissor {
+        margin: 0 14px 18px;
+    }
+
+}

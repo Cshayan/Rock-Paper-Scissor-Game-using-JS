@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock | Paper | Scissor</title>
+    <link rel="icon" href="Images/download.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-10 m-auto">
+                <header>
+                    <h1><i class="fas fa-hand-rock"></i> Rock, <i class="fas fa-hand-paper"></i> Paper, <i
+                            class="fas fa-hand-scissors"></i> Scissor!</h1>
+                </header>
+                <!-- Score Container -->
+                <div class="score text-center mt-5">
+                    <div class="player-score">
+                        <h2>Player</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="computer-score">
+                        <h2>Computer</h2>
+                        <p>0</p>
+                    </div>
+                </div>
+                <!-- Ends here -->
+
+                <!-- Intro Container -->
+                <div class="intro text-center mt-5">
+                    <button class="btn btn-success">Play the game!</button>
+                </div>
+                <!-- Ends here -->
+
+                <!-- Match Container -->
+                <div class="match fadeOut">
+                    <h2 class="winner">Choose an option</h2>
+                    <div class="hands">
+                        <img class="player-hand" src="Images/rock.png">
+                        <img class="computer-hand" src="Images/rock.png">
+                    </div>
+                    <div class="options">
+                        <button class="rock">rock</button>
+                        <button class="paper">paper</button>
+                        <button class="scissor">scissor</button>
+                    </div>
+                </div>
+                <!-- Ends here -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
